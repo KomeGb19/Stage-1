@@ -170,6 +170,21 @@ a:focus {
     max-width: 35rem;
 }
 
+.pop {
+    background-color: rgba(83, 239, 177, 0.583);
+    width: 30rem;
+    height: 5rem;
+    padding: 1rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 5px;
+}
+
+.hero-image {
+    z-index: -1;
+}
+
 .horizontal-rule {
     width: 50%;
     margin: auto;
