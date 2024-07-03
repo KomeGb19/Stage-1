@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>HNG stage 1</title>
     <link rel="stylesheet" href="css/style.css">
-    <script type="module" src="js/main.js"></script>
+    <script src="js/main.js"></script>
 </head>
 
 <body>
@@ -16,8 +16,9 @@
             <div class="cta-links">
                 <nav class="navigation">
                     <ul class="header-ul">
-                        <li class="header-li">
-                            <a href="mailto:blessingmacauley@gmail.com">blessingmacaulay@gmail.com</a>
+                        <li class="header-li email-header">
+                            <a href="mailto:blessingmacauley@gmail.com"
+                                data-testid="slackEmail">blessingmacaulay@gmail.com</a>
                         </li>
                     </ul>
                 </nav>
@@ -51,7 +52,8 @@
                 </section>
             </div>
         </section>
-        <div class="fade">
+
+        <div class="fade sticky">
             <hr class="horizontal-rule">
 
             <section class="article">
@@ -80,26 +82,27 @@
                         </div>
                     </div>
 
+                    <div class="fade">
+                        <h2 class="article-heading">2026</h2>
+                        <div class="article-content">
+                            <hr class="horizontal-rule">
+                            <p class="paragraph">
+                                Gain Certifications to validate their skills and knowledge.
 
-                    <h2 class="article-heading">2026</h2>
-                    <div class="article-content">
-                        <hr class="horizontal-rule">
-                        <p class="paragraph">
-                            Gain Certifications to validate their skills and knowledge.
+                                Build a Portfolio Develop and showcase a diverse portfolio of projects on platforms like
+                                GitHub.
+                                Develop Soft Skills Enhance communication, teamwork, and project management skills.
+                            </p>
+                            <br>
+                            <p class="paragraph">
+                                Improve Problem-Solving Skills Regularly practice coding challenges and algorithms to
+                                sharpen problem-solving
+                                abilities.
+                            </p>
 
-                            Build a Portfolio Develop and showcase a diverse portfolio of projects on platforms like
-                            GitHub.
-                            Develop Soft Skills Enhance communication, teamwork, and project management skills.
-                        </p>
-                        <br>
-                        <p class="paragraph">
-                            Improve Problem-Solving Skills Regularly practice coding challenges and algorithms to
-                            sharpen problem-solving
-                            abilities.
-                        </p>
-
-                        <div class="dev">
-                            <img src="images/organized-layers-stack-black-23811.png" alt="Dev">
+                            <div class="dev">
+                                <img src="images/organized-layers-stack-black-23811.png" alt="Dev">
+                            </div>
                         </div>
                     </div>
                 </div>
@@ -113,6 +116,10 @@
                 <p>
                     <span class="nowrap"> &copy; Copyright <time id="year"></time></span>
                     <span>KomeJs</span>
+                    <span class="cta-links">
+                        <a href="mailto:blessingmacaulay@gmail.com"
+                            data-testid="slackEmail">blessingmacaulay@gmail.com</a>
+                    </span>
                 </p>
                 <span class="support-links">
                     <a href="https://keyword.dog" data-testid="keywordLink">Keyword.dog</a>

@@ -15,6 +15,9 @@
     --SECONDARY-COLOR: #2b3a4e;
     --FONT-COLOR: #E6EDF3;
     --FF: "DM Sans", sans-serif;
+    --BAR-WIDTH: 40px;
+    --BAR-HEIGHT: 8px;
+    --BAR-GAP: 6px;
 }
 
 html {
@@ -32,6 +35,25 @@ body {
     background-color: var(--PRIMARY-COLOR);
 }
 
+@media (min-width: 248px) and (max-width: 480px) {
+    .container {
+        max-width: 100rem;
+        margin: auto;
+        padding: 1rem;
+
+    }
+
+    .email-header {
+        display: none;
+    }
+
+    .footer-section {
+        gap: 1.5rem;
+    }
+
+}
+
+
 .header {
     background-color: var(--SECONDARY-COLOR);
     position: sticky;
@@ -40,8 +62,6 @@ body {
     box-shadow: 0 0 3px black;
     padding-top: 1rem;
     padding-bottom: 1rem;
-    /*     border-bottom-left-radius: 15px;
-    border-bottom-right-radius: 15px; */
 }
 
 .header-section {
@@ -105,6 +125,8 @@ a:focus {
 #hero {
     background-color: var(--SECONDARY-COLOR);
     clip-path: inset(0 0 5% 0 round 0% 0% 5rem 5rem);
+    position: sticky;
+    z-index: 1;
 }
 
 .hero-container {
@@ -124,8 +146,6 @@ a:focus {
     scroll-margin-top: 0rem;
     margin-bottom: 3rem;
 }
-
-
 
 .hero-heading {
     max-width: 35rem;
@@ -195,7 +215,7 @@ a:focus {
 
 .footer-section {
     display: flex;
-    justify-content: space-between;
+    justify-content: space-around;
     align-items: center;
 }
 
@@ -264,6 +284,10 @@ a:focus {
     animation: fade linear both;
     animation-timeline: view();
     animation-range: entry 40% cover 40%;
+}
+
+.button-animation {
+    animation: button-animation 0.8s both;
 }
 
 @keyframes button-animation {
@@ -355,8 +379,4 @@ a:focus {
         top: 50px;
     }
 
-}
-
-.button-animation {
-    animation: button-animation 0.8s both;
 }
