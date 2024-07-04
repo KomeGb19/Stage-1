@@ -51,6 +51,17 @@ body {
         gap: 1.5rem;
     }
 
+    .pop-1 {
+        background-color: rgba(83, 239, 177, 0.583);
+        width: 30rem;
+        height: 5rem;
+        padding: 1rem;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        border-radius: 5px;
+    }
+
 }
 
 
@@ -170,7 +181,7 @@ a:focus {
     max-width: 35rem;
 }
 
-.pop {
+.pop-1 {
     background-color: rgba(83, 239, 177, 0.583);
     width: 30rem;
     height: 5rem;
@@ -179,6 +190,11 @@ a:focus {
     justify-content: center;
     align-items: center;
     border-radius: 5px;
+}
+
+.pop-2 {
+    display: none;
+
 }
 
 .hero-image {
@@ -392,6 +408,23 @@ a:focus {
         text-align: center;
         position: relative;
         top: 50px;
+    }
+
+    .pop-1 {
+        display: none;
+
+    }
+
+    .pop-2 {
+        background-color: rgba(83, 239, 177, 0.583);
+        width: 30rem;
+        height: 5rem;
+        padding: 1rem;
+        margin-top: 1rem;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        border-radius: 5px;
     }
 
 }
